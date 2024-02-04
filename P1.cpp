@@ -46,11 +46,11 @@ double Circle::Distance(const Circle &a) const
 void Circle::print()
 {
     // cout << this->x << " " << this->y << " " << this->radius << endl;
-    cout << "x: " << this->x << endl;
+    cout << "\nX: " << this->x << endl;
     cout << "Y: " << this->y << endl;
     cout << "Radius: " << this->radius << endl;
     cout << "Area: " << this->Area() << endl;
     cout << "Diameter: " << this->Perimeter() << endl;
-    cout << "Distance from the circle of 1 to the origin:  " << this->Distance() << endl;
+    cout << "Distance from the circle to the origin:  " << this->Distance() << endl;
     cout << ".............................." << endl;
 }

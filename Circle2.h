@@ -39,7 +39,6 @@ public:
     double Area() const;
     double Perimeter() const
     {
-        // 2 * M_PI * radius
         return 2 * M_PI * radius;
     };
     double Distance(const Circle &a) const;
