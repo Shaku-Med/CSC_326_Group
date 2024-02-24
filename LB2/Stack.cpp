@@ -10,7 +10,7 @@ void replace(Stack<ItemType> &stack, const ItemType &oItem, const ItemType &nIte
     while (!stack.empty())
     {
         ItemType current = stack.top();
-        stack.pop();
+        stack.pop(current);
 
         if (current == oItem)
         {
