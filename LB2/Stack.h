@@ -109,7 +109,7 @@ int Stack<ItemType>::size() const
 template <class ItemType>
 bool Stack<ItemType>::identical(const Stack<ItemType> &other) const
 {
-    if (size() != other.size())
+    if (myTop != other.myTop)
     {
         return false;
     }
