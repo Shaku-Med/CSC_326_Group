@@ -5,11 +5,11 @@ using namespace std;
 template <class ItemType>
 void replace(Stack<ItemType> &stack, const ItemType &oItem, const ItemType &nItem)
 {
+    ItemType current;
     Stack<ItemType> tempStack;
     //
     while (!stack.empty())
     {
-        ItemType current = stack.top();
         stack.pop(current);
 
         if (current == oItem)
@@ -24,8 +24,10 @@ void replace(Stack<ItemType> &stack, const ItemType &oItem, const ItemType &nIte
     // RECOVER THE MISSING ITEM
     while (!tempStack.empty())
     {
-        stack.push(tempStack.top());
-        tempStack.pop();
+        // stack.push(tempStack.top());
+        // tempStack.pop();
+        tempStack.pop(current);
+        stack.push(current);
     }
 }
 
@@ -79,7 +81,7 @@ int main()
 
     //
 
-    replace(s1, 1, 4);
+    replace(s1, 2, 4);
 
     cout << endl;
 
