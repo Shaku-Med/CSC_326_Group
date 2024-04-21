@@ -1,0 +1,8 @@
+Graph Representation (Adjacency List):
+1 -> 2 3 
+2 -> 1 6 
+3 -> 1 5 
+4 -> 5 
+5 -> 3 4 7 
+6 -> 2 7 
+7 -> 5 6 
